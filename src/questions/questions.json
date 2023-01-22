@@ -1,0 +1,227 @@
+[
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es un closure en JavaScript?",
+    "respuestas": [
+      "Una función anónima",
+      "Una función que se ejecuta automáticamente",
+      "Una función que retiene el scope de las variables en su ámbito padre",
+      "Un tipo de objeto en JavaScript"
+    ],
+    "respuestaCorrecta": "Una función que retiene el scope de las variables en su ámbito padre",
+    "explicacion": "Un closure es una función que retiene el scope de las variables en su ámbito padre, permitiendo el acceso a esas variables incluso después de que la función original haya regresado.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es una promesa en JavaScript?",
+    "respuestas": [
+      "Una función que retorna una promesa",
+      "Un objeto que representa una operación asíncrona",
+      "Un método para hacer llamadas a un servidor",
+      "Una forma de manejar errores en JavaScript"
+    ],
+    "respuestaCorrecta": "Un objeto que representa una operación asíncrona",
+    "explicacion": "Una promesa es un objeto que representa una operación asíncrona en JavaScript. Una promesa tiene dos estados posibles: cumplida o rechazada, y permite manejar el resultado de una operación asíncrona de forma organizada.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es el hoisting en JavaScript?",
+    "respuestas": [
+      "El proceso de mover variables y funciones al inicio del scope",
+      "El proceso de mover todas las funciones al final del archivo",
+      "El proceso de mover todas las variables al final del archivo",
+      "El proceso de mover todas las funciones y variables al inicio del archivo"
+    ],
+    "respuestaCorrecta": "El proceso de mover variables y funciones al inicio del scope",
+    "explicacion": "El hoisting es el proceso de mover variables y funciones al inicio del scope en JavaScript. Esto significa que aunque una variable o función sea declarada en cualquier parte del código, JavaScript la tratará como si estuviera declarada al principio del scope en el que se encuentra.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Principiante"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es un arrow function en JavaScript?",
+    "respuestas": [
+      "Una función anónima",
+      "Una función que se ejecuta automáticamente",
+      "Una función con una sintaxis abreviada",
+      "Una función que retiene el scope de las variables en su ámbito padre"
+    ],
+    "respuestaCorrecta": "Una función con una sintaxis abreviada",
+    "explicacion": "Un arrow function es una función con una sintaxis abreviada en JavaScript. Esta sintaxis es más concisa que la sintaxis de una función tradicional y también tiene un comportamiento de scope diferente.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es el event bubbling en JavaScript?",
+    "respuestas": [
+      "El proceso de propagar un evento hacia arriba en el DOM",
+      "El proceso de propagar un evento hacia abajo en el DOM",
+      "El proceso de detener la propagación de un evento",
+      "El proceso de manejar un evento en el elemento raíz del DOM"
+    ],
+    "respuestaCorrecta": "El proceso de propagar un evento hacia arriba en el DOM",
+    "explicacion": "El event bubbling es un comportamiento en JavaScript en el que un evento se propaga hacia arriba en el DOM después de que ha sido activado en un elemento hijo. Esto significa que los controladores de eventos en elementos padres pueden manejar el mismo evento después de que ha sido activado en un elemento hijo.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es el metodo map() en javascript?",
+    "respuestas": [
+      "Una función que permite recorrer un arreglo y aplicar una función a cada uno de sus elementos",
+      "Una función que permite recorrer un objeto y aplicar una función a cada uno de sus atributos",
+      "Una función que permite recorrer un arreglo y devolver un arreglo nuevo con los elementos modificados",
+      "Una función que permite recorrer un objeto y devolver un objeto nuevo con los atributos modificados"
+    ],
+    "respuestaCorrecta": "Una función que permite recorrer un arreglo y aplicar una función a cada uno de sus elementos",
+    "explicacion": " El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos. Es similar a forEach pero este regresa un nuevo arreglo con los elementos modificados",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Qué es el metodo reduce() en javascript?",
+    "respuestas": [
+      "Una función que permite recorrer un arreglo y aplicar una función a cada uno de sus elementos",
+      "Una función que permite recorrer un arreglo y devolver un valor acumulado",
+      "Una función que permite recorrer un arreglo y devolver un objeto con los elementos modificados",
+      "Una función que permite recorrer un objeto y devolver un objeto nuevo con los atributos modificados"
+    ],
+    "respuestaCorrecta": "Una función que permite recorrer un arreglo y devolver un valor acumulado",
+    "explicacion": " El método reduce() aplica una función a un acumulador y a cada valor de un array (de izquierda a derecha) para reducirlo a un único valor. La función recibe dos argumentos: acumulador y valor actual",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "JavaScript",
+    "pregunta": "¿Cuál es la diferencia entre let y var en javascript?",
+    "respuestas": [
+      "let tiene un alcance global mientras que var tiene un alcance local",
+      "let tiene un alcance de bloque mientras que var tiene un alcance global",
+      "let es una variable constante mientras que var puede ser modificada",
+      "var tiene un alcance de bloque mientras que let tiene un alcance global"
+    ],
+    "respuestaCorrecta": "let tiene un alcance de bloque mientras que var tiene un alcance global",
+    "explicacion": "La principal diferencia entre let y var es el alcance de su declaración. let tiene un alcance de bloque, es decir, solo está disponible dentro del bloque en el que fue declarado. Por otro lado, var tiene un alcance global, lo que significa que está disponible en todo el código.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "Html",
+    "pregunta": "¿Cuál es el significado semántico de las etiquetas en HTML?",
+    "respuestas": [
+      "Las etiquetas en HTML indican cómo se debe mostrar el contenido en pantalla",
+      "Las etiquetas en HTML indican la función del contenido dentro de un documento",
+      "Las etiquetas en HTML indican el orden en el que deben mostrarse los elementos en pantalla",
+      "Las etiquetas en HTML indican el estilo visual del contenido"
+    ],
+    "respuestaCorrecta": "Las etiquetas en HTML indican la función del contenido dentro de un documento",
+    "explicacion": "Las etiquetas en HTML tienen un significado semántico, es decir, indican el tipo de contenido que se está mostrando. Por ejemplo, la etiqueta <h1> indica un encabezado de nivel 1, mientras que la etiqueta <p> indica un párrafo de texto. Esto ayuda a los navegadores y motores de búsqueda a entender mejor el contenido y a ofrecer una mejor experiencia de usuario.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "Html",
+    "pregunta": "¿Cuáles son las nuevas etiquetas en HTML5?",
+    "respuestas": [
+      "<header>, <nav>, <section>, <article>, <aside>, <footer>",
+      "<div>, <span>, <p>, <h1>, <h2>",
+      "<form>, <input>, <label>, <select>, <option>",
+      "<table>, <tr>, <td>, <th>, <thead>"
+    ],
+    "respuestaCorrecta": "<header>, <nav>, <section>, <article>, <aside>, <footer>",
+    "explicacion": "HTML5 introduce varias nuevas etiquetas con un significado semántico específico. Estas etiquetas incluyen <header> para el encabezado de una página, <nav> para la navegación, <section> para dividir el contenido en secciones, <article> para contenido independiente, <aside> para contenido relacionado y <footer> para el pie de página.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "CSS",
+    "pregunta": "¿Qué es el responsive web design?",
+    "respuestas": [
+      "Una técnica para adaptar el diseño de un sitio web a diferentes tamaños de pantalla",
+      "Una técnica para optimizar el rendimiento de un sitio web en dispositivos móviles",
+      "Una técnica para mejorar la accesibilidad de un sitio web para personas con discapacidades",
+      "Una técnica para aumentar la velocidad de carga de un sitio web"
+    ],
+    "respuestaCorrecta": "Una técnica para adaptar el diseño de un sitio web a diferentes tamaños de pantalla",
+    "explicacion": "El responsive web design es un enfoque de diseño que permite que un sitio web se adapte automáticamente a diferentes tamaños de pantalla, desde escritorio hasta dispositivos móviles. Esto se logra utilizando técnicas de diseño adaptativo y de maquetación, como el uso de puntos de quiebre y medidas relativas en lugar de medidas absolutas.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "CSS",
+    "pregunta": "¿Qué es la especificidad en CSS?",
+    "respuestas": [
+      "La capacidad de una regla CSS para sobreescribir otras reglas con la misma etiqueta",
+      "La capacidad de una regla CSS para aplicar estilos a elementos específicos dentro de una página",
+      "La capacidad de una regla CSS para aplicar estilos a elementos con un atributo específico",
+      "La capacidad de una regla CSS para aplicar estilos a elementos con una clase específica"
+    ],
+    "respuestaCorrecta": "La capacidad de una regla CSS para sobreescribir otras reglas con la misma etiqueta",
+    "explicacion": "La especificidad en CSS se refiere a la capacidad de una regla CSS para sobreescribir otras reglas con la misma etiqueta. Una regla con mayor especificidad tendrá prioridad sobre una regla con menor especificidad. La especificidad se determina por el tipo de selector utilizado (por ejemplo, id vs clase) y la cantidad de selectores anidados en una regla.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "CSS",
+    "pregunta": "¿Por qué se llama hoja de estilos en cascada (CSS)?",
+    "respuestas": [
+      "Porque los estilos se aplican de manera similar a como cae el agua en cascada",
+      "Porque los estilos se aplican de manera jerárquica, similar a una cascada de elementos",
+      "Porque los estilos se aplican de manera ordenada, similar a una cascada de reglas",
+      "Porque los estilos se pueden sobreponer entre sí, similar a como cae el agua en cascada"
+    ],
+    "respuestaCorrecta": "Porque los estilos se aplican de manera jerárquica, similar a una cascada de elementos",
+    "explicacion": "CSS significa hoja de estilos en cascada debido a que los estilos se aplican de manera jerárquica, similar a una cascada de elementos. Los estilos son aplicados de arriba hacia abajo y de izquierda a derecha, los estilos específicos tienen prioridad sobre los estilos generales. Los estilos también se pueden sobreponer entre sí, similar a como cae el agua en cascada.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "CSS",
+    "pregunta": "¿Cuál es la diferencia entre grid y flex en CSS?",
+    "respuestas": [
+      "Grid se utiliza para diseñar estructuras de tablas mientras que flex se utiliza para diseñar elementos flexibles",
+      "Grid se utiliza para diseñar estructuras de dos dimensiones mientras que flex se utiliza para diseñar elementos flexibles",
+      "Grid se utiliza para diseñar estructuras de tablas y flex se utiliza para diseñar estructuras de dos dimensiones",
+      "Grid se utiliza para diseñar estructuras de dos dimensiones mientras que flex se utiliza para diseñar estructuras de una dimensión"
+    ],
+    "respuestaCorrecta": "Grid se utiliza para diseñar estructuras de dos dimensiones mientras que flex se utiliza para diseñar elementos flexibles",
+    "explicacion": "Grid es un sistema de diseño en dos dimensiones que se utiliza para organizar elementos en filas y columnas, permitiendo una mejor control sobre el diseño y la posición de los elementos. Flex, por otro lado, es un sistema de diseño en una dimensión que se utiliza para organizar elementos de manera flexible y adaptable, permitiendo una mejor control sobre el alineamiento, el orden y la distribución de los elementos.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  },
+  {
+    "tema": "Diseño web",
+    "pregunta": "¿Qué es SVG?",
+    "respuestas": [
+      "Un lenguaje de marcas para la creación de imágenes vectoriales",
+      "Un formato de compresión de imágenes para reducir el tamaño de las imágenes",
+      "Un formato de imagen para mejorar la calidad de las imágenes en pantallas de alta resolución",
+      "Un lenguaje de programación para la creación de animaciones en sitios web"
+    ],
+    "respuestaCorrecta": "Un lenguaje de marcas para la creación de imágenes vectoriales",
+    "explicacion": "SVG significa Scalable Vector Graphics (Gráficos vectoriales escalables), es un lenguaje de marcas que permite crear imágenes vectoriales en línea. Las imágenes vectoriales son aquellas que están compuestas por líneas y curvas en lugar de píxeles, lo que las hace escalables sin perder calidad. Esto significa que una imagen SVG se puede escalar al tamaño que sea necesario sin perder calidad. SVG es ampliamente utilizado en diseño web para la creación de gráficos, iconos y animaciones.",
+    "respondida": false,
+    "respuestaAcertada": false,
+    "dificultad": "Intermedio"
+  }
+]
