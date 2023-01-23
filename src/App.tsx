@@ -16,21 +16,23 @@ function App() {
   const quizlist: Pregunta[] = preguntas;
   const [currentCuestion, setCurrentCuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>("");
+  const [showAnswerInfo, setShowAnswerInfo] = useState(false);
 
   const currentQuiz = Array(quizlist[currentCuestion]);
   const resCorrecta = quizlist.map((item) => item.respuestaCorrecta);
 
   if (resCorrecta.includes(selectedAnswer)) {
     console.log("esta es la res. correcta");
-    quizlist.map((quiz) => (quiz.respuestaAcertada = true));
+    currentQuiz.map((quiz) => (quiz.respuestaAcertada = true));
   }
 
   const handlerChange = (e: ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value);
-    quizlist.map((quiz) => (quiz.respondida = true));
+    currentQuiz.map((quiz) => (quiz.respondida = true));
     setSelectedAnswer(e.target.value);
+    setShowAnswerInfo(true);
   };
-
+  console.log(quizlist);
   return (
     <div>
       {currentQuiz.map((item) => (
@@ -53,7 +55,7 @@ function App() {
           </span>
 
           <div>
-            {item.respondida && (
+            {showAnswerInfo && (
               <>
                 <span>
                   {item.respuestaAcertada
@@ -72,6 +74,8 @@ function App() {
       <button
         type="button"
         onClick={() => {
+          setSelectedAnswer("");
+          setShowAnswerInfo(false);
           setCurrentCuestion(currentCuestion - 1);
         }}
       >
@@ -80,6 +84,8 @@ function App() {
       <button
         type="button"
         onClick={() => {
+          setSelectedAnswer("");
+          setShowAnswerInfo(false);
           setCurrentCuestion(currentCuestion + 1);
         }}
       >
