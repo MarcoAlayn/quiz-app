@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ReactEventHandler, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import preguntas from "../src/questions/questions.json";
 
 interface Pregunta {
@@ -26,12 +26,51 @@ function App() {
     currentQuiz.map((quiz) => (quiz.respuestaAcertada = true));
   }
 
+  const handleClick = (direction: number) => {
+    setSelectedAnswer("");
+    setShowAnswerInfo(false);
+    setCurrentCuestion(currentCuestion + direction);
+  };
+
   const handlerChange = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
     currentQuiz.map((quiz) => (quiz.respondida = true));
     setSelectedAnswer(e.target.value);
     setShowAnswerInfo(true);
+
+    const theQuiz = quizlist[currentCuestion];
+    localStorage.setItem("pregunta", JSON.stringify(theQuiz.pregunta));
+    localStorage.setItem("respondida", JSON.stringify(theQuiz.respondida));
+    localStorage.setItem(
+      "respuestaAcertada",
+      JSON.stringify(theQuiz.respuestaAcertada)
+    );
   };
+
+  function parseStorage() {
+    try {
+      const respondida = JSON.parse(
+        localStorage.getItem("respondida") || "null"
+      );
+      const respuestaAcertada = JSON.parse(
+        localStorage.getItem("respuestaAcertada") || "null"
+      );
+      console.log("respuestaAcertada", respuestaAcertada);
+      if (respondida !== null) {
+        currentQuiz.map((quiz) => (quiz.respondida = respondida));
+        currentQuiz.map((quiz) => (quiz.respuestaAcertada = respuestaAcertada));
+      }
+    } catch (error) {
+      console.error(`Error parsing value:`, error);
+      return null;
+    }
+    return;
+  }
+
+  useEffect(() => {
+    // Recuperar estado guardado en localStorage
+    parseStorage();
+  }, []);
+
   console.log(quizlist);
   return (
     <div>
@@ -71,22 +110,13 @@ function App() {
         </>
       ))}
 
-      <button
-        type="button"
-        onClick={() => {
-          setSelectedAnswer("");
-          setShowAnswerInfo(false);
-          setCurrentCuestion(currentCuestion - 1);
-        }}
-      >
+      <button type="button" onClick={() => handleClick(-1)}>
         Anterior
       </button>
       <button
         type="button"
         onClick={() => {
-          setSelectedAnswer("");
-          setShowAnswerInfo(false);
-          setCurrentCuestion(currentCuestion + 1);
+          handleClick(1);
         }}
       >
         Siguiente
