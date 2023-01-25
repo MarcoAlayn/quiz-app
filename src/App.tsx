@@ -1,5 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import preguntas from "../src/questions/questions.json";
+import { loadQuestions } from "./redux/action";
+import { useDispatch } from "react-redux";
 
 interface Pregunta {
   tema: string;
@@ -13,6 +15,8 @@ interface Pregunta {
 }
 
 function App() {
+  const dispatch = useDispatch();
+
   const quizlist: Pregunta[] = preguntas;
   const [currentCuestion, setCurrentCuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>("");
@@ -30,6 +34,7 @@ function App() {
     setSelectedAnswer("");
     setShowAnswerInfo(false);
     setCurrentCuestion(currentCuestion + direction);
+    dispatch(loadQuestions());
   };
 
   const handlerChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -54,7 +59,6 @@ function App() {
       const respuestaAcertada = JSON.parse(
         localStorage.getItem("respuestaAcertada") || "null"
       );
-      console.log("respuestaAcertada", respuestaAcertada);
       if (respondida !== null) {
         currentQuiz.map((quiz) => (quiz.respondida = respondida));
         currentQuiz.map((quiz) => (quiz.respuestaAcertada = respuestaAcertada));
