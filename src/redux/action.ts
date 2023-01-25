@@ -12,7 +12,7 @@ interface Quiz {
   dificultad: string;
 }
 
-interface LoadQuestionsAction {
+export interface LoadQuestionsAction {
   type: typeof LOAD_QUESTIONS;
   payload: Quiz[];
 }

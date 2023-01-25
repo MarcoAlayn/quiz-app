@@ -1,10 +1,10 @@
-import { LOAD_QUESTIONS } from "./action";
+import { LOAD_QUESTIONS, LoadQuestionsAction } from "./action";
 
-let initialState = {
+const initialState = {
   questionsList: [],
 };
 
-function rootReducer(state = initialState, action) {
+function rootReducer(state = initialState, action: LoadQuestionsAction) {
   switch (action.type) {
     case LOAD_QUESTIONS:
       return {
